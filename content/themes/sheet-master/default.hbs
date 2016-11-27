@@ -1,64 +1,180 @@
-<!doctype html>
-<html>
-	<head>
-		<title>{{meta_title}}</title>
 
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<meta name="description" content="{{meta_description}}" />
 
-		<meta name="HandheldFriendly" content="True" />
-		<meta name="MobileOptimized" content="320" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cold Ants | Welcome to Cold Ants</title>
+        <link rel="stylesheet" href="https://www.coldants.com/static/css/bootstrap.min.bd5f1af51849.css">
+        <link rel="stylesheet" href="https://www.coldants.com/static/css/bootstrap-theme.min.5304b6867d87.css">
+        <link rel="stylesheet" href="https://www.coldants.com/static/css/theme-ext.9d8da4610a0d.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://www.coldants.com/static/favicon.499da562827f.ico">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+<style>
+.ant-shake:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
 
-		<link rel="stylesheet" href="{{asset "fonts/font-awesome/css/font-awesome.min.css"}}">
-		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
 
-		<link rel="stylesheet" href="{{asset "css/pure.min.css"}}">
-		<link rel="stylesheet" href="{{asset "css/screen.css"}}">
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
 
-		{{ghost_head}}
-	</head>
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
 
-	<body>
-		<div id="sheet-layer-bottom" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-			<header>
-				<div id="sheet-header-content">
-					<div class="pure-g-r">
-						<div class="pure-u-1-2">
-							<a class="sheet-title" href="{{@blog.url}}"><h1 class="sheet-header-title">{{@blog.title}}</h1></a>
-						</div>
-						<div class="pure-u-1-2">
-							<h1 class="sheet-header-secondary"></h1>
-						</div>
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.media a{
+	text-decoration: none;
+}
+.big-white-spacer{
+	min-height: 20em;
+}
+.skyline{
+	background-image: url(https://www.coldants.com/static/img/columbia_heights_skyline.ea22bbe5707b.png);
+	min-height: 500px;
+	position: relative;
+    background-size: cover;
+}
+.rowhouses{
+	background-image: url(https://www.coldants.com/static/img/rowhouses.ce6b6e18adc3.png);
+	min-height: 500px;
+	position: relative;
+    background-size: cover;
+}
+.tivoli{
+	background-image: url(https://www.coldants.com/static/img/tivoli.15330d859c5f.png);
+    min-height: 500px;
+	position: relative;
+    background-size: cover;
+}
+.skyline p, .rowhouses p, .tivoli p{
+	font-size: 130%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.skyline ul li, .rowhouses ul li, .tivoli ul li{
+    font-size: 120%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.skyline p strong{
+    color:#283891;
+}
+.stick-bottom{
+	position: absolute;
+	bottom: 0;
+	right: 5px;
+}
+.group1 i{
+    color: green;
+}
+.group2 i{
+    color: orange;
+}
+.group3 i{
+    color: purple;
+}
+.popup-link{
+	cursor:pointer;
+}
+.popup-link:hover{
+	color:#6298d1;
+}
+</style>
+
+        {{ghost_head}}
+
+    </head>
+    <body>
+        
+        <div class="container-fluid gimmespace">
+            <div class="row">
+                <div class="col-xs-18 col-sm-12 col-md-12">
+                    
+
+                </div>
+            </div>
+            <div class="row">
+                 
+                
+<div class="container">
+	<div class="row ant-gray">
+		<div class="col-md-4 col-md-push-8">
+			<img alt="Cold Ants Properties logo" src="https://www.coldants.com/static/img/coldantslogo.c227e838e858.png" class="ant-shake img-responsive">
+		</div>
+		<div class="col-md-8 col-md-pull-4">
+			<div class="parent">
+				<div class="child">
+					<div class="child-child">
+						<h1>Welcome to Cold Ants</h1>
+						<p class="lead">The intersection of real estate and software with a personal touch, local to Washington DC<https://www.coldants.com/p>
 					</div>
 				</div>
-			</header>
-		</div>
-
-		<div id="sheet-layer-top">
-			<div class="sheet-page-content">
-				{{{body}}}
 			</div>
-
-			<footer class="sheet-footer">
-				<div class="sheet-footer-content">
-					<div class="pure-g-r">
-						<div class="pure-u-1-2 sheet-copyright">
-							&copy; <time datetime="{{date format='YYYY'}}">{{date format="YYYY"}}</time> <a href="{{@blog.url}}">{{@blog.title}}</a>
-						</div>
-
-						<div class="pure-u-1-2 sheet-footer-secondary">
-						</div>
-					</div>
-				</div>
-			</footer>
 		</div>
+	</div>
+	<div class="row colorline ant-dk-blue">&nbsp;</div>
+	<div class="row top2">
+	{{{body}}}
+	</div>
+	<div class="row colorline ant-lt-blue">&nbsp;</div>
 
-		{{ghost_foot}}
+</div>
 
-		<script src="{{asset "js/main.js"}}"></script>
+            </div>
+        </div>
+        <footer><!--class=footer" to go back to sticky-->
+            <div class="container">
+                
+                <nav class="navbar" role="navigation">
+                	<div class="container-fluid">
+                		<ul class="nav navbar-nav">
+                			<li><a href="mailto:contact@coldants.mailclark.ai"><i class="ant-fg-lt-blue fa fa-2x fa-envelope-square" aria-hidden="true"></i></a></li>
+                			<li><a href="https://twitter.com/coldantsdc"><i class="ant-fg-lt-blue fa fa-2x fa-twitter-square" aria-hidden="true"></i></a></li>
+                			<li><a href="https://www.facebook.com/coldantsdc"><i class="ant-fg-lt-blue fa fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+                			<li><a href="https://www.coldants.com/p/about/">About</a></li>
+                			<li><a href="https://www.coldants.com/phttps://www.coldants.com/pricing/">Pricing</a></li>
+                            <li><a href="https://www.coldants.com/p/security/">Security</a></li>
+                			<li><a href="https://www.coldants.com/p/credits/">Credits</a></li>
+                			
+                		</ul>
+                	</div>
+                </nav>
+                
+            </div>
+        </footer>
+        
 
-	</body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        
+{{ghost_foot}}
+
+    </body>
 </html>
