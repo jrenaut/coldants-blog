@@ -3,8 +3,9 @@
 		<main role="main">
 
 			{{#foreach posts}}
+			<h2>{{{title}}}</h2>
 			<p class="sheet-post-excerpt">{{excerpt}}&hellip;</p>
-			<div>READ MORE <i class="fa fa-caret-right"></i></div>
+			<div><a href='{{url}}'>READ MORE <i class="fa fa-caret-right"></i></a></div>
 				<!--<a class="sheet-post {{post_class}}" href='{{url}}'>
 					<article class="sheet-panel">
 						<header>
