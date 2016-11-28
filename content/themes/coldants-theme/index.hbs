@@ -1,11 +1,11 @@
 {{!< default}}
 
-<div class="pure-g-r">
-	<div class="pure-u-3-4">
 		<main role="main">
 
 			{{#foreach posts}}
-				<a class="sheet-post {{post_class}}" href='{{url}}'>
+			<p class="sheet-post-excerpt">{{excerpt}}&hellip;</p>
+			<div>READ MORE <i class="fa fa-caret-right"></i></div>
+				<!--<a class="sheet-post {{post_class}}" href='{{url}}'>
 					<article class="sheet-panel">
 						<header>
 							<h2 class="sheet-title sheet-post-title">{{{title}}}</h2>
@@ -23,14 +23,14 @@
 						</section>
 					</article>
 				</a>
+				-->
 			{{/foreach}}
 
 			<div class="sheet-panel">
 				{{pagination}}
 			</div>
 		</main>
-	</div>
-
+	
 	<!--<div class="pure-u-1-4">
 		<div class="sheet-panel sheet-sidebar">
 			{{#if @blog.logo}}
@@ -42,4 +42,4 @@
 			<div class="sheet-sidebar-subscribe"><a class="sheet-btn" href="{{@blog.url}}/rss/"><i class="fa fa-rss-square"></i> <span>Subscribe</span></a></div>
 		</div>
 	</div>-->
-</div>
+
